@@ -1,0 +1,58 @@
+
+<div class="">
+  <mat-progress-spinner value="25"></mat-progress-spinner>
+  <mat-spinner *ngIf="showSpinner" color="warn"></mat-spinner>
+  <button mat-flat-button color="primary" (click)="loadData()">Load Data</button>
+</div>
+
+<div class="">
+  <span matBadge="1570" matBadgeOverlap="false">Notifications</span>
+</div>
+
+<div class="">
+  <span matBadge="5" matBadgePosition="below before">Notifications</span>
+</div>
+
+<div class="">
+  <span matBadge="5" matBadgePosition="below after">Notifications</span>
+</div>
+
+
+<div class="">
+  <mat-icon color="primary" matBadgePosition="above before">grade</mat-icon>
+</div>
+
+
+<div class="">
+  <mat-button-toggle color="primary" #toggleBtn>toggle: {{toggleBtn.checked}}</mat-button-toggle>
+</div>
+
+<div class="">
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup.value}}
+</div>
+
+
+<div class="">
+  <button mat-button>MiBoton</button>
+  <button mat-raised-button>MiBoton</button>
+  <button mat-flat-button>MiBoton</button>
+  <button mat-stroked-button>MiBoton</button>
+</div>
+
+<div class="">
+  <button mat-icon-button>icon</button>
+  <button mat-fab>fab</button>
+  <button mat-mini-fab>miniFab</button>
+</div>
+
+<div class="">
+  <button color="primary" mat-button>MiBoton</button>
+  <button color="accent" mat-raised-button>MiBoton</button>
+  <button color="warn" disableRipple mat-flat-button>MiBoton</button>
+  <button color="primary" mat-stroked-button>MiBoton</button>
+</div>
